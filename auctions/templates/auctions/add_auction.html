@@ -1,0 +1,12 @@
+{% extends 'auctions/layout.html' %}
+
+<h1>This is some fucke dup shit</h1>
+
+{% block body %}
+<h2>Add a listing</h2>
+<form method="POST" enctype="multipart/form-data"> 
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" name="" value="Add Listing">
+</form>
+{% endblock body %}
